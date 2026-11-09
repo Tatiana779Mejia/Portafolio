@@ -76,12 +76,55 @@ input:focus,textarea:focus{outline:none;border-color:var(--ink)}
 .direct .btn{text-align:center}
 footer{max-width:1100px;margin:0 auto;text-align:center;color:var(--cream);font-size:.82rem;padding:6px 0 14px}
 
+/* ===== Responsive ===== */
+img{max-width:100%;height:auto}
+.hero,.project .body,.cert,.card,.fact{min-width:0}
+p,h1,h2,h3,.fact,.role{overflow-wrap:anywhere}
+
+/* tablet */
+@media(max-width:900px){
+  .project{grid-template-columns:160px 1fr;gap:18px}
+  .project .side{padding:20px}
+  .project .year{font-size:2.2rem}
+  .contact{grid-template-columns:1fr}
+}
+
+/* phone */
 @media(max-width:760px){
   body{padding:12px}
-  .hero{grid-template-columns:1fr;text-align:left}
-  .project{grid-template-columns:1fr}
-  .project .side{flex-direction:row;align-items:center}
-  .contact{grid-template-columns:1fr}
-  nav{justify-content:center}
+  nav{justify-content:center;text-align:center;gap:8px}
+  /* menu always in ONE row; sizes scale with the screen width */
+  nav ul{width:100%;flex-wrap:nowrap;gap:4px;justify-content:flex-start;overflow-x:auto;scrollbar-width:none}
+  nav ul::-webkit-scrollbar{display:none}
+  nav ul li:first-child{margin-left:auto}
+  nav ul li:last-child{margin-right:auto}
+  nav ul a{white-space:nowrap;padding:7px clamp(6px,2vw,12px);font-size:clamp(.62rem,3vw,.8rem)}
+  .sheet{border-radius:var(--r-md);padding:24px 20px}
+  .hero{grid-template-columns:1fr;justify-items:center;min-height:0;gap:24px}
+  .hero > div:last-child{width:100%}
+  .hero h1{text-align:center}
+  .headline{display:table;margin-left:auto;margin-right:auto}
+  .hero p{max-width:none}
+  .ghost{font-size:14rem;right:-20px;top:-40px}
+  .facts{grid-template-columns:1fr;margin-top:28px}
+  .project{grid-template-columns:1fr;gap:12px}
+  .project .side{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 16px;padding:16px 20px}
+  .project .body{padding:22px}
+  .links .btn{flex:1 1 auto;text-align:center}
 }
+
+/* small phone */
+@media(max-width:420px){
+  body{padding:8px}
+  .sheet{padding:20px 16px}
+  nav .logo{font-size:1.4rem}
+  .avatar{width:150px}
+  .card{padding:20px}
+  .project .body{padding:18px}
+  .cert{padding:10px 10px 18px}
+  .btn{padding:10px 18px}
+  .links .btn{flex:1 1 100%}
+  form{padding:20px}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

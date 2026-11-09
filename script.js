@@ -39,7 +39,7 @@ My goal is to continue growing both personally and professionally, gain new expe
       role: "Designer, Developer & Pitch",
       contribution: "I designed the app interface, programmed it in Power Apps and took part in the project pitch.",
       links: [
-        { label: "Open app", url: "https://apps.powerapps.com/play/e/default-d8e3bd44-0bba-426b-952d-ada7bb17393c/a/ed3a159c-bb89-461c-ac80-f05cbfd37f0d?tenantId=d8e3bd44-0bba-426b-952d-ada7bb17393c&hint=91c5c9a0-bfd1-413c-9c90-440522f6cd47&sourcetime=1793204142578" }
+        { label: "Open app", url: "https://apps.powerapps.com/play/e/default-d8e3bd44-0bba-426b-952d-ada7bb17393c/a/ed3a159c-bb89-461c-ac80-f05cbfd37f0d?tenantId=d8e3bd44-0bba-426b-952d-ada7bb17393c&hint=91c5c9a0-bfd1-413c-9c90-440522f6cd47&source=sharebutton&sourcetime=1794191796802" }
       ]
     },
     {
@@ -166,7 +166,7 @@ $("contact").innerHTML = `
   <div style="background:var(--ink);color:var(--cream);border-radius:var(--r-lg);padding:clamp(28px,5vw,56px);text-align:center">
     <p class="script" style="font-size:1.5rem;color:var(--sage);margin-bottom:8px">Ready when you are</p>
     <h2 style="color:var(--cream);font-size:clamp(1.9rem,5vw,3.2rem);font-weight:800;margin-bottom:16px">What are you waiting for?</h2>
-    <p style="max-width:52ch;margin:0 auto 28px;opacity:.85"></p>
+    <p style="max-width:52ch;margin:0 auto 28px;opacity:.85">Let's turn your idea into something people love. Send me a message and let's build it together.</p>
     <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
       ${ext("mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Let's work together"), "Email")}
       ${CONFIG.cv ? ext(CONFIG.cv, "Download my CV") : ""}
