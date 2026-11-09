@@ -77,7 +77,7 @@ My goal is to continue growing both personally and professionally, gain new expe
       contribution: "I designed the game interface and programmed the game logic: decisions, inventory, progress tracking and records.",
       links: [
         // IMPORTANT: replace with your public link (GitHub Pages / Vercel). 127.0.0.1 only works on your computer.
-        { label: "Play the game", url: "https://TU-USUARIO.github.io/Test-repo/" }
+        { label: "Play the game", url: "https://testrepo-inky-rho.vercel.app/" }
       ]
     },
     {
@@ -88,7 +88,7 @@ My goal is to continue growing both personally and professionally, gain new expe
       role: "Developer",
       contribution: "I programmed the whole system using object-oriented programming, plate validation with regular expressions and automatic fee calculation with datetime.",
       links: [
-        { label: "View code", url: "https://github.com/Tatiana779Mejia/NOMBRE-DEL-REPO" }
+        { label: "View code", url: "https://github.com/Tatiana779Mejia/proyecto_parqueo.git" }
       ]
     }
   ],
